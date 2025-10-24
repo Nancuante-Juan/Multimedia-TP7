@@ -1,7 +1,5 @@
-.DISCS{
-    animation: spin 10000ms cubic-bezier(0, 0, 1, 1)infinite;
-}
-
+/***** ANIMACIONES *****/
+.DISCS{ animation: spin 10000ms cubic-bezier(0, 0, 1, 1)infinite;}
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -9,11 +7,7 @@
         transform: rotate(-360deg);
     }
 }
-
-.FADE_ON_ENTRANCE{
-    animation: fade-in 500ms cubic-bezier(0, 0, 1, 1);
-}
-
+.FADE_ON_ENTRANCE{ animation: fade-in 700ms cubic-bezier(0, 0, 1, 1); }
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -22,22 +16,11 @@
     }
 }
 
-.BCK{
-    backdrop-filter: blur(80px);
-    background-color: rgba(0, 0, 0, 0.4);
-}
 
-/*.PANEL{
-    background-color: rgba(0, 0, 0, 0.2);
-}*/
-
-.HIGH{
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.NAV_BUTTON:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
+/*****DESENFOQUE*****/
+.BCK{ backdrop-filter: blur(100px); background-color: hsla(342, 95%, 15%, 0.6); }
+.HIGH{ background-color: rgba(255, 255, 255, 0.1); }
+.NAV_BUTTON:hover{ background-color: rgba(255, 255, 255, 0.1); }
 body{
     background-image: url("assets/pinKing.jpg");
     background-size: cover;
