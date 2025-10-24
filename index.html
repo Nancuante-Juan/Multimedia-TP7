@@ -9,11 +9,11 @@
     <link rel="icon" href="icons/music-2.svg">
 </head>
 <body>
-    <div class="flex flex-col-reverse md:flex-row w-screen min-h-screen max-h-screen text-white overflow-hidden BCK">
+    <div class="flex flex-col md:flex-row w-screen min-h-screen max-h-screen text-white overflow-hidden BCK">
         <!---------------->
         <!-----NAVBAR----->
         <!---------------->
-        <div class="flex flex-row md:flex-col PANEL h-20 md:h-screen min-w-20 items-center overflow-y-auto text-xs">
+        <div class="flex flex-row md:flex-col PANEL h-20 md:h-screen min-w-20 items-center overflow-y-auto text-xs order-3 md:order-first">
             <div class="flex flex-col w-full h-full min-w-20 min-h-16 items-center justify-center border-b-4 border-l-0 md:border-b-0 md:border-l-4 border-white HIGH">
                 <img src="icons/house.svg" class="h-8 w-8">
                 Inicio
@@ -54,24 +54,6 @@
 
 
 
-        <div class="flex flex-row h-20 items-center PANEL md:hidden">
-            <img class="flex min-w-20 min-h-20 max-h-20 max-w-20 items-center justify-center rounded-full DISCS" src="assets/pinKing.jpg">
-            <div class="flex flex-col h-full w-full justify-center p-4 gap-1">
-                <div class="text-2xl font-bold">
-                    pinKing
-                </div>
-                <div class="text-gray-400">
-                    Sān-Z
-                </div>
-            </div>
-            <img src="icons/star.svg" class="p-4 h-16 w-16">
-            <div class="flex min-w-20 min-h-20 bg-white  items-center justify-center">
-                <img src="icons/pause.svg" class="h-8 w-8">
-            </div>
-        </div>
-
-
-
         <!-------------->
         <!-----MAIN----->
         <!-------------->
@@ -80,56 +62,66 @@
                 Disfruta de tu música,
                 <div class="text-6xl font-bold"> Una_oveja </div>
             </div>
-            <div class="grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-0">
-                <img src="assets/pinKing.jpg" class="hover:scale-110 transition transition-duration-300">
-                <img src="assets/pinKing.jpg">
-                <img src="assets/pinKing.jpg">
-                <img src="assets/pinKing.jpg">
-                <img src="assets/pinKing.jpg">
-                <img src="assets/pinKing.jpg">
+            <div class="grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-4 grid-row-2 gap-0">
+                <div class="flex flex-col hover:scale-105 hover:shadow-xl text-nowrap hover:text-wrap">
+                    <img src="assets/pinKing.jpg" class="">
+                    <div class="flex flex-col bg-pink-500 p-2">
+                        <div class="font-bold overflow-hidden text-ellipsis">pinKing</div>
+                        <div class="text-xs">Sān-Z</div>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
+
+
 
 
 
         <!--------------->
         <!-----QUEUE----->
         <!--------------->
-        <div class="hidden flex-col h-screen PANEL w-1/2 md:flex">
-            <div class="flex flex-row p-4 text-gray-400 font-bold gap-4 items-center">
-                <div class="w-full">
+        <div class="flex flex-col md:h-screen PANEL w-full max-w-full md:w-1/2 md:max-w-1/2">
+            <div class="hidden md:flex flex-row p-4 opacity-60 font-bold gap-4 items-center">
+                <div class="w-full text-nowrap overflow-hidden text-ellipsis">
                     COLA DE REPRODUCCIÓN
                 </div>
                 <img src="icons/shuffle.svg" alt="">
                 <img src="icons/repeat.svg" alt="">
             </div>
-            <div class="h-full w-full overflow-y-auto">
-                <div class="flex flex-row h-14 items-center HIGH">
+            <div class="hidden flex-col h-full w-full overflow-y-auto md:flex">
+                <div class="flex flex-row w-full h-14 items-center HIGH">
                     <img class="flex min-w-14 min-h-14 max-h-14 max-w-14 items-center justify-center" src="assets/pinKing.jpg">
                     <div class="flex flex-col h-full w-full justify-center p-2">
                         <div class="text-lg font-bold">
                             pinKing
                         </div>
-                        <div class="text-gray-400 text-sm">
+                        <div class="opacity-60 text-sm">
                             Sān-Z
                         </div>
                     </div>
                     <img src="icons/minus.svg" class="pr-4">
                 </div>
 
+
+
             </div>
-            <div class="flex flex-row h-20 items-center">
+            <!--MINIPLAYER-->
+            <div class="flex flex-row w-full max-w-full h-20 items-center  text-nowrap">
                 <img class="flex min-w-20 min-h-20 max-h-20 max-w-20 items-center justify-center rounded-full DISCS" src="assets/pinKing.jpg">
-                <div class="flex flex-col h-full w-full justify-center p-4 gap-1">
-                    <div class="text-2xl font-bold">
-                        pinKing
+                    <div class="flex flex-col h-full w-full max-w-full justify-center px-2">
+                        <div class="text-2xl md:text-xl lg:text-2xl font-bold text-nowrap overflow-hidden text-ellipsis">
+                            pinKing
+                        </div>
+                        <div class="opacity-60 text-nowrap overflow-hidden text-ellipsis">
+                            Sān-Z
+                        </div>
+                        <input type="range" min="0" max="100" value="050" class="w-full max-w-full accent-white outline-0 rounded-0">
                     </div>
-                    <div class="text-gray-400">
-                        Sān-Z
-                    </div>
-                </div>
-                <img src="icons/star.svg" class="p-4 h-16 w-16">
-                <div class="flex min-w-20 min-h-20 bg-white  items-center justify-center">
+                <div class="flex min-w-20 min-h-20 bg-white items-center justify-center">
                     <img src="icons/pause.svg" class="h-8 w-8">
                 </div>
             </div>

@@ -6,7 +6,7 @@
     from {
         transform: rotate(0deg);
     } to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -23,18 +23,17 @@
 }
 
 .BCK{
-    backdrop-filter: blur(40px);
-    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(80px);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.PANEL{
+/*.PANEL{
     background-color: rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .HIGH{
     background-color: rgba(255, 255, 255, 0.1);
 }
-.NAV_BUTTON{transition-duration: 200ms;}
 .NAV_BUTTON:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
