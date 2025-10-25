@@ -36,7 +36,7 @@
 * { 
     text-overflow: ellipsis;
     scrollbar-width: thin;
-    scrollbar-color: #db2777ff #00000000;
+    scrollbar-color: rgba(255, 255, 255, 0.2) #00000000;
 }
 body{
     background-image: url("assets/pinKing.jpg");
