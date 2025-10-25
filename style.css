@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /***** ANIMACIONES *****/
 .DISCS{ animation: spin 10000ms cubic-bezier(0, 0, 1, 1)infinite;}
 @keyframes spin {
@@ -22,13 +24,21 @@
         opacity: 1;
     }
 }
-.PAUSE_BTN:hover>img{ animation: spin-reverse 10000ms cubic-bezier(0, 0, 1, 1)infinite; }
+@keyframes stay-on-top {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1);
+    }
+}
+.PAUSE_BTN:hover>div>div>img{ animation: spin-reverse 10000ms cubic-bezier(0, 0, 1, 1)infinite;}
+.PAUSE_BTN{animation: stay-on-top 10000ms cubic-bezier(0,0,1,1)infinite;}
+.PAUSE_BTN:hover>div>div{ transform: scale(1.2); }
+.PAUSE_BTN:hover>div>div{ transform: scale(1.05); }
 
 
 /***** DESENFOQUE *****/
-.text-sm { opacity: 0.6; }
-.MINIPLAYER{ opacity: 1 !important; }
-.MINIPLAYER>div>div>.text-sm{ opacity: 1 !important; }
+.COVER_EL>div>.text-sm { opacity: 0.6; }
 .text-lg { font-weight: bolder; }
 .COVER_EL>div.text-xs{ opacity: 0.6; }
 .HIGH    { background-color: rgba(255, 255, 255, 0.1); }

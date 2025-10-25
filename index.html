@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YT Music si estuviera bien hecho</title>
-    <link rel="stylesheet" href="stylestyle.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
     <link rel="icon" href="icons/music-2.svg">
 </head>
 <body>
     <div class="flex flex-col w-screen h-screen text-white overflow-hidden ">
-        <div class="flex flex-col md:flex-row w-screen BCK">
+        <div class="flex flex-col md:flex-row w-screen BCK"> 
             <!---------------->
             <!-----NAVBAR----->
             <!---------------->
@@ -66,7 +67,7 @@
                 <div class="grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-4 grid-row-2 gap-0">
                     <div class="COVER_EL">
                         <img src="assets/pinKing.jpg">
-                        <div class="bg-pink-500">
+                        <div class="bg-pink-600">
                             <div class="font-bold"> pinKing </div>
                             <div class="text-xs"> Sān-Z </div>
                         </div>
@@ -672,13 +673,12 @@
                 <img src="icons/wavesound.svg" class="opacity-40">
             </div>
         </div>
-        <div class="hidden md:flex flex-row bg-pink-600 w-screen min-h-10 max-h-10 py-1 items-center gap-2 MINIPLAYER text-sm pr-10">
-            <img class="flex min-w-20 max-w-20 rounded-full self-end DISCS -my-1" src="assets/pinKing.jpg">
-            <div class="font-bold text-sm text-nowrap">pinKing</div>·<div class="opacity-60 text-sm text-nowrap"> Sān-Z</div>
+        <div class="hidden md:flex flex-row bg-linear-to-r from-pink-600 to-rose-700 w-screen min-h-10 max-h-10 py-1 items-center gap-2 MINIPLAYER text-sm">
+            <img class="flex min-w-20 max-w-20 rounded-full self-end -my-1 DISCS" src="assets/pinKing.jpg">
+            <div class="font-bold text-sm text-nowrap -ml-2">pinKing</div>·<div class="opacity-60 text-sm text-nowrap"> Sān-Z</div>
             <div class="ICON_DIV pl-2"><img class="min-w-7" src="icons/star.svg"></div>
             <div class="ICON_DIV pr-2"><img class="min-w-7" src="icons/list-plus.svg"></div>
-            <div class="font-mono text-sm text-ellipsis text-nowrap min-w-24">01:20/03:08</div>
-            <div class="flex flex-row min-w-96 overflow-hidden WAVESOUND">
+            <div class="flex flex-row overflow-hidden WAVESOUND">
                 <img src="icons/wavesound.svg">
                 <img src="icons/wavesound.svg">
                 <img src="icons/wavesound.svg">
@@ -691,11 +691,15 @@
                 <img src="icons/wavesound.svg" class="opacity-40">
                 <img src="icons/wavesound.svg" class="opacity-40">
             </div>
+            <div class="font-mono text-sm text-nowrap opacity-60 -mr-2">01:20/03:08</div>
+            <div class="flex min-w-20 min-h-20 self-end -my-1 PAUSE_BTN overflow-hidden">
+                <div class="flex min-w-20 min-h-20 bg-black rounded-full items-center justify-center">
+                    <div><img src="icons/pause.svg" class="h-8 w-8"></div>
+                </div>
+            </div>
         </div>
 
-        <div class="absolute right-0 bottom-0 hidden md:flex min-w-20 min-h-20 bg-black rounded-full items-center justify-center PAUSE_BTN">
-            <img src="icons/pause.svg" class="h-8 w-8">
-        </div>
+        
     </div>
 </body>
 </html>
