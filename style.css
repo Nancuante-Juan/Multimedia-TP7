@@ -27,11 +27,9 @@
 
 
 /***** DESENFOQUE *****/
-.COVER_EL>div>.text-sm { opacity: 0.6; }
 .text-lg { font-weight: bolder; }
-.COVER_EL>div.text-xs{ opacity: 0.6; }
 .HIGH    { background-color: rgba(255, 255, 255, 0.1); }
-.NAV_BUTTON:hover{ background-color: rgba(255, 255, 255, 0.1); }
+.NAV_BUTTON:hover{ background-color: rgba(255, 255, 255, 0.04); }
 .NAV_BUTTON:hover>img{ transform: scale(1.15);}
 .NAV_BUTTON:active>img{ transform: scale(1.05);}
 .WAVESMALL>img{ min-width: 90px; max-width: 90px;}
@@ -59,6 +57,7 @@ body{
     flex-direction:   row;
     width:            100%;
     height:           56px;
+    text-wrap:        nowrap;
     align-items:      center;
 }
 .LIST_EL>img{
@@ -90,6 +89,11 @@ body{
     min-width:       24px;
     min-height:      24px;
 }
+.LIST_EL>div>div>div{ 
+    overflow: hidden;
+}
+.LIST_EL>div>div>.text-xs{ opacity: 0.6; }
+.LIST_EL:hover{ background-color: rgba(255, 255, 255, 0.04); }
 
 
 
@@ -115,7 +119,11 @@ body{
     padding:         8px;
 }
 .COVER_EL>div>div{ overflow: hidden; }
+.COVER_EL>div>.text-xs{ opacity: 0.6; }
 
+
+
+/***** BOTONES *****/
 .ICON_DIV:hover>img{ transform: scale(1.2); }
 .ICON_DIV:active>img{ transform: scale(1.05); }
 .ICON_DIV:hover>div>img{ transform: scale(1.2); }
