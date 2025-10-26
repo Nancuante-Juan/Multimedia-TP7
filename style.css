@@ -99,6 +99,7 @@ body{
 
 /*****  GRILLAS  *****/
 .COVER_EL{
+    position:        relative;
     display:         flex;
     flex-direction:  column;
     text-wrap:       nowrap;
@@ -107,7 +108,7 @@ body{
 .COVER_EL:hover{
     transform:       scale(1.05);
     box-shadow:      0 0 32px rgba(0, 0, 16, 0.1);
-    z-index: 1;
+    z-index:         1;
 }
 .COVER_EL:active{
     transform:       scale(1.02);
@@ -119,9 +120,9 @@ body{
     padding:         8px;
 }
 .COVER_EL>.grid{
-    display: grid !important;
+    display:               grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 0;
+    padding:               0;
 }
 .COVER_EL>div>div{ overflow: hidden; }
 .COVER_EL>div>.text-xs{ opacity: 0.6; }
