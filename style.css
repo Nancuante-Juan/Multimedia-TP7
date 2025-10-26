@@ -81,20 +81,40 @@ body{
     width:            100%;
     height:           100%;
     justify-content:  center;
+    overflow:         hidden;
 }
 
 .LIST_EL>div>img{
-    max-width:       24px;
-    max-height:      24px;
-    min-width:       24px;
-    min-height:      24px;
+    max-width:        24px;
+    max-height:       24px;
+    min-width:        24px;
+    min-height:       24px;
+}
+.LIST_EL>div>img:hover{
+    transform: scale(1.2);
+}
+.LIST_EL>div>img:active{
+    transform: scale(1.05);
 }
 .LIST_EL>div>div>div{ 
-    overflow: hidden;
+    max-width:        100%;
+    overflow:         hidden;
 }
 .LIST_EL>div>div>.text-xs{ opacity: 0.6; }
 .LIST_EL:hover{ background-color: rgba(255, 255, 255, 0.04); }
-
+.LIST_BIG{ height: 64px; }
+.LIST_BIG>img{
+    max-width:        64px;
+    max-height:       64px;
+    min-width:        64px;
+    min-height:       64px;
+}
+.LIST_BIG>div>img{
+    max-width:        28px;
+    max-height:       28px;
+    min-width:        28px;
+    min-height:       28px;
+}
 
 
 /*****  GRILLAS  *****/
