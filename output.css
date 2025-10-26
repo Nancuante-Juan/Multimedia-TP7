@@ -546,6 +546,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .pt-35 {
+    padding-top: calc(var(--spacing) * 35);
+  }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
@@ -702,6 +705,11 @@
     @media (width >= 48rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 4px;
+    }
+  }
+  .md\:pt-0 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
     }
   }
   .md\:pb-10 {

@@ -49,12 +49,7 @@ body{
     height: 100%; 
     max-height: calc(100vh - 40px);
 }
-@media (width < 48rem){
-    .BCK{max-height: 100vh !important;}
-    .text-6xl{
-        padding-top: 124px;
-    }
-}
+@media (width < 48rem){.BCK{max-height: 100vh !important;}}
 
 /*****  LISTAS  *****/
 .LIST_EL{ 
