@@ -1,3 +1,9 @@
+/***** TIPOGRAFÍAS *****/
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/web/InterVariable.woff2) format('truetype');
+}
+
 /***** ANIMACIONES *****/
 @keyframes spin {
     from {
@@ -34,6 +40,7 @@
 .NAV_BUTTON:active>img{ transform: scale(1.05);}
 .WAVESMALL>img{ min-width: 90px; max-width: 90px;}
 * { 
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     text-overflow: ellipsis;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.2) #00000000;
